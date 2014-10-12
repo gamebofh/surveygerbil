@@ -11,7 +11,7 @@
 11	    """
 12	    # Get Javascript updated HTML page
 13	    response = client.commands.getPageText()
-14	    assert response['status']
+14	    assert response['status']~
 15	    assert response['result']
 16	
 17	    # Create soup from HTML page and get desired information
