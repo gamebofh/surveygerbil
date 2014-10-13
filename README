@@ -10,6 +10,8 @@ Scraper
 
 Parser
 	BeautifulSoup
+	lxml is our parser
+
 
 easy_install beautifulsoup4
 

@@ -44,7 +44,7 @@
 44	
 45	    # Open main gallery page
 46	    client = WindmillTestClient(__name__)
-47	    client.open(url='https://www.surveymonkey.com/s/KLCBNM5.html')
+47	    client.open(url='https://www.surveymonkey.com/s/KLCBNM5')
 48	
 49	    # Page isn't completely loaded until image gallery data
 50	    # has been updated by javascript code
