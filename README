@@ -1,26 +1,48 @@
-These were Nik's suggestions
-PROBLEM WITH SCRAPER
-http://kochi-coders.com/2014/03/10/lets-scrape-the-page-using-beautiful-soup-4/
+README
 
+We've decided on going with Python. 
+
+Scraper
+	Mechanize
+
+	Working.  Requires python2
+
+
+Parser
+	BeautifulSoup
+
+easy_install beautifulsoup4
+
+Other
+
+easy_install
+windmill
+
+Documentation
+Python
+	https://docs.python.org/3/tutorial/index.html
+
+Beautiful Soup
+	http://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+Discussion
+These were Nik's suggestions
 
 Python:
 https://www.packtpub.com/books/content/web-scraping-python-part-2
 This article recommends using BeautifulSoup (http://www.crummy.com/software/BeautifulSoup/) and Windmill (http://www.getwindmill.com/). I've used the former, but not the latter.
 
-easy_install beautifulsoup4
-
-
-Jython:
-http://blog.databigbang.com/web-scraping-ajax-and-javascript-sites/
-
-Java:
-http://lobobrowser.org/cobra.jsp
-
 scraper
 http://codecr.am/blog/post/7/
-
-
 
 Start tutorial
 https://docs.python.org/3/tutorial/index.html
 
+PROBLEM WITH SCRAPER
+http://kochi-coders.com/2014/03/10/lets-scrape-the-page-using-beautiful-soup-4/
+
+Other potential solutions in other languages
+Jython:
+http://blog.databigbang.com/web-scraping-ajax-and-javascript-sites/
+Java:
+http://lobobrowser.org/cobra.jsp
