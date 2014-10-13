@@ -2,11 +2,17 @@
 # Then we'll parse
 
 # http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python
+from bs4 import BeautifulSoup
+
 f = open('mech.out', 'r+')
+
 contents = f.read()
 
 print (contents)
 
+soup = BeautifulSoup(open("index.html"))
+
+soup = BeautifulSoup("<html>data</html>")
 
 
 
