@@ -20,8 +20,9 @@ soup = BeautifulSoup(open("mech.out"))
 # soup = BeautifulSoup("<html>data</html>")
 
 # Now print soup
-
-print (soup)
+print(soup.prettify())
+#print(soup.get_text())
+#print (soup)
 
 # Moving to bottom so we have it, but don't need it right now
 # http://axialcorps.com/2013/09/27/dont-slurp-how-to-read-files-in-python/
