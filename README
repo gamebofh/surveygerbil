@@ -12,6 +12,52 @@ Parser
 	BeautifulSoup
 	lxml is our parser
 
+	Debugging
+
+	We can do interactive debugging by doing something like this
+
+python -m pdb parse.py
+
+Then you can "list" the file to find out what line numbers are
+
+  673  history | grep python
+LM-SCF-00870738:surveygerbil jpowers$  python -m pdb parse.py
+> /Users/jpowers/Sites/surveygerbil/parse.py(6)<module>()
+-> from bs4 import BeautifulSoup
+(Pdb) l
+  1  	# Needs to read in mech.out
+  2  	# Then we'll parse
+  3  	# http://www.crummy.com/software/BeautifulSoup/bs4/doc/
+  4  	# http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python
+  5  	
+  6 
+
+Then you can set a breakpoint, where it will stop
+
+(Pdb) b 30
+Breakpoint 1 at /Users/jpowers/Sites/surveygerbil/parse.py:30
+
+Then "continue" until 30
+
+(Pdb) b 30
+Breakpoint 1 at /Users/jpowers/Sites/surveygerbil/parse.py:30
+(Pdb) c
+> /Users/jpowers/Sites/surveygerbil/parse.py(30)<module>()
+-> f = open('pretty.out', 'w')
+(Pdb)
+
+From here we have it loaded in memory and we can try different stuff
+
+(Pdb) soup.title.name
+'title'
+(Pdb) soup.a
+<a href="https://www.surveymonkey.com/"><span>SurveyMonkey</span></a>
+(Pdb) soup.find_all('a')
+[<a href="https://www.surveymonkey.com/"><span>SurveyMonkey</span></a>, <a href="https://www.surveymonkey.com/mp/survey-templates/" id="pbhl" target="_blank" title="Go to SurveyMonkey.com to create free online surveys">sample surveys</a>]
+(Pdb) 
+
+
+
 
 easy_install beautifulsoup4
 
