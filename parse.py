@@ -10,10 +10,13 @@ contents = f.read()
 
 #print (contents)
 
+# have BS open the file mech.out and store it in soup.
 soup = BeautifulSoup(open("mech.out"))
 
+# now store the string inside the qoutes into the variable soup
 soup = BeautifulSoup("<html>data</html>")
 
+# Now print soup
 print (soup)
 
 # Moving to bottom so we have it, but don't need it right now
