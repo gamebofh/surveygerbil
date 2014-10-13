@@ -20,7 +20,7 @@ soup = BeautifulSoup(open("mech.out"))
 # soup = BeautifulSoup("<html>data</html>")
 
 # Now print soup
-print(soup.prettify())
+pretty = soup.prettify()
 #print(soup.get_text())
 #print (soup)
 
@@ -28,5 +28,8 @@ print(soup.prettify())
 # http://axialcorps.com/2013/09/27/dont-slurp-how-to-read-files-in-python/
 
 f = open('pretty.out', 'w')
-print >> f, 'pretty.out:', pretty.out  # or f.write('...\n')
+print(pretty)
+f.write(pretty)
+#print >> f, soup.prettify()  # or f.write('...\n')
+#print >> f, 'pretty.out:', pretty.out  # or f.write('...\n')
 f.close()
